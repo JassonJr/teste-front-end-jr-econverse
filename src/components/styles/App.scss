@@ -1,0 +1,14 @@
+@import "_colors";
+@import "_grid";
+
+@function em($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1em;
+}
+
+.container {
+  background-color: $cor-primaria;
+  a {
+    font-size: em(24);
+    color: white;
+  }
+}
