@@ -27,3 +27,7 @@ $alterar: #dedede;
 .highlight-box {
   background-color: $branco-0 !important;
 }
+
+.shadow {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}

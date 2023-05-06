@@ -4,27 +4,27 @@
   background-image: url(../../Assets/png/banner.png);
   background-size: cover;
   background-position: center;
-  .banner-shadow {
+  .banner-inside {
     padding: rem(52) rem(92);
     height: 100%;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    // background: linear-gradient(
+    //   0deg,
+    //   rgba(0, 0, 0, 1) 0%,
+    //   rgba(0, 0, 0, 0) 100%
+    // );
     color: $branco-0;
-    h1 {
+    .banner-title {
       font-weight: 600;
       font-size: rem(48);
       line-height: rem(72);
       max-width: 22ch;
     }
-    h2 {
+    .banner-text {
       font-weight: 600;
       font-size: rem(36);
       line-height: rem(54);
     }
-    button {
+    .banner-button {
       color: $branco-0;
       background-color: $cor-primaria;
       margin-top: rem(35);
