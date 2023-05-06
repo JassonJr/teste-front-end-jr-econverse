@@ -1,0 +1,81 @@
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.benefits,
+.benefits-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    padding-right: rem(9);
+  }
+}
+
+p {
+  color: $cinza-2;
+}
+
+.benefits {
+  column-gap: rem(119);
+}
+
+//div barra de pesquisa
+.barSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding: rem(12) rem(56);
+  border-top: 1px solid $cinza-0;
+  border-bottom: 1px solid $cinza-0;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-field {
+  width: rem(657);
+  height: rem(48);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: $branco-1;
+  font-size: rem(14);
+  font-weight: 500;
+  padding: rem(24);
+}
+.container-input_icon {
+  position: absolute;
+  top: 45%;
+  right: 16px;
+  transform: translateY(-50%);
+  color: $cinza-2;
+}
+
+.icons {
+  display: flex;
+  column-gap: 32px;
+  justify-content: space-between;
+}
+
+//navbar
+nav {
+  padding: 11px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+a {
+  color: $cinza-2;
+  text-decoration: none;
+}
+
+.icon {
+  padding-right: 12px;
+}

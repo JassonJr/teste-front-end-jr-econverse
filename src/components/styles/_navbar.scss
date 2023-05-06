@@ -1,0 +1,32 @@
+.section-categories {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: rem(34);
+}
+
+.category {
+  text-align: center;
+  p {
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 500;
+    color: $cinza-5;
+
+    margin-top: rem(22);
+  }
+}
+
+.category-box {
+  background-color: #f4f4f4;
+  width: rem(128);
+  height: rem(128);
+  border-radius: rem(10);
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    display: block;
+  }
+}

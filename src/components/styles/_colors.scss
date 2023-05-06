@@ -1,12 +1,28 @@
+@function rem($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1rem;
+}
+
 $cor-primaria: #f71963;
 $azul-marinho: #041e50;
-$branco: #fff;
-$cinza-0: #c0c0c0;
-$cinza-1: #9f9f9f;
-$cinza-2: #808080;
-$cinza-3: #707070;
-$cinza-4: #4e4e4e;
+$branco-0: #fff;
+$branco-1: #f6f5f2;
+$cinza-0: #f0f0f0;
+$cinza-1: #c0c0c0;
+$cinza-2: #9f9f9f;
+$cinza-3: #808080;
+$cinza-4: #707070;
+$cinza-5: #4e4e4e;
 $cinza-6: #3f3f40;
-$cinza-5: #3b3b3b;
-$cinza-7: #2a2a2a;
-$cinza-8: #222222;
+$cinza-7: #3b3b3b;
+$cinza-8: #2a2a2a;
+$cinza-9: #222222;
+
+//texto cor de rosa
+.highlight {
+  color: $cor-primaria !important;
+  font-weight: bold;
+}
+
+.highlight-box {
+  background-color: $branco-0 !important;
+}

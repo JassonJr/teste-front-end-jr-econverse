@@ -9,6 +9,8 @@ $mobile: 480px;
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -121,10 +123,4 @@ $mobile: 480px;
 
 .row {
   @include row;
-}
-
-div {
-  background-color: rgba(0, 0, 0, 0.4);
-  min-height: 50px !important;
-  margin-bottom: 20px;
 }

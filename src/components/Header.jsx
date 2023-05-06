@@ -3,32 +3,76 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <div>
-        <ul>
-          <li>Compra 100% segura</li>
-          <li>Frete grátis acima de R$200</li>
-          <li>Parece suas compras</li>
-        </ul>
-      </div>
-      <div>
+      {/* benefícios */}
+      <section className="benefits">
+        <div className="benefits-item">
+          <img src="../src/Assets/svg/ShieldCheck.svg" alt="segurança" />
+          <p>
+            Compra <span className="highlight">100% segura</span>
+          </p>
+        </div>
+        <div className="benefits-item">
+          <img src="../src/Assets/svg/Truck.svg" alt="Frete Gratis" />
+          <p>
+            <span className="highlight">Frete grátis</span> acima de R$200
+          </p>
+        </div>
+        <div className="benefits-item">
+          <img src="../src/Assets/svg/CreditCard.svg" alt="Parcele" />
+          <p>
+            <span className="highlight">Parecele</span> suas compras
+          </p>
+        </div>
+      </section>
+
+      {/* search bar */}
+      <section className="barSection">
         <img src="../src/Assets/svg/marca.svg" alt="vtex" />
-        <input type="text" />
-        <img src="../src/Assets/svg/box.svg" alt="compras" />
-        <img src="../src/Assets/svg/heart.svg" alt="favoritos" />
-        <img src="../src/Assets/svg/UserCircle.svg" alt="perfil" />
-        <img src="../src/Assets/svg/ShoppingCart.svg" alt="carrinho" />
-      </div>
+        <div className="input-container">
+          <input
+            className="input-field"
+            type="text"
+            placeholder="O que você está buscando?"
+          />
+          <img
+            className="container-input_icon"
+            src="../src/Assets/svg/MagnifyingGlass.svg"
+          ></img>
+        </div>
+        <div className="icons">
+          <img src="../src/Assets/svg/box.svg" alt="compras" />
+          <img src="../src/Assets/svg/heart.svg" alt="favoritos" />
+          <img src="../src/Assets/svg/UserCircle.svg" alt="perfil" />
+          <img src="../src/Assets/svg/ShoppingCart.svg" alt="carrinho" />
+        </div>
+      </section>
+
+      {/* nav bar */}
       <nav>
         <ul>
-          <li>todas as categorias</li>
-          <li>supermercado</li>
-          <li>livros</li>
-          <li>moda</li>
-          <li>lançamentos</li>
-          <li>ofertas do dia</li>
           <li>
-            <img src="../src/Assets/svg/crown.svg" alt=" " />
-            assinatura
+            <a href="/">todas as categorias</a>
+          </li>
+          <li>
+            <a href="/">supermercado</a>
+          </li>
+          <li>
+            <a href="/">livros</a>
+          </li>
+          <li>
+            <a href="/">moda</a>
+          </li>
+          <li>
+            <a href="/">lançamentos</a>
+          </li>
+          <li>
+            <a href="">
+              <span className="highlight">ofertas do dia</span>
+            </a>
+          </li>
+          <li>
+            <img className="icon" src="../src/Assets/svg/crown.svg" alt=" " />
+            <a href="/">assinatura</a>
           </li>
         </ul>
       </nav>
