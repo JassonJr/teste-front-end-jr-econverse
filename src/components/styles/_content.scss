@@ -1,0 +1,136 @@
+.content-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: rem(39);
+  margin-bottom: 500px;
+}
+.sec-divider {
+  $detail: rem(360);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: rem(4);
+  &::before {
+    content: "";
+    display: block;
+    width: $detail;
+    height: 1px;
+    background-color: $alterar;
+    position: absolute;
+    left: $detail - rem(-68);
+    top: 50%;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: rem(360);
+    height: 1px;
+    background-color: $alterar;
+    position: absolute;
+    right: $detail - rem(-68);
+    top: 50%;
+  }
+}
+
+.content-nav {
+  //padding: 11px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  .content-related {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  li {
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    border-right: 1px solid #bdbdbd;
+    padding: rem(12) rem(74.25);
+    cursor: pointer;
+  }
+  .cel {
+    border-left: 1px solid #bdbdbd;
+  }
+  a {
+    font-size: rem(16);
+    line-height: rem(16);
+    font-weight: 400;
+    color: $cinza-7;
+    text-decoration: none;
+  }
+  span {
+    font-weight: 700;
+  }
+}
+
+.content-products {
+  display: grid;
+  //justify-content: space-evenly;
+  justify-items: center;
+  margin-top: rem(20);
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 22%);
+  border-radius: rem(10);
+  padding: rem(17) rem(12);
+  .card-container {
+    width: 100%;
+  }
+  .product-description,
+  .installments {
+    color: $cinza-6;
+    font-weight: lighter;
+  }
+  .old-price {
+    margin-top: rem(12);
+    text-decoration: line-through;
+    color: $cinza-2;
+  }
+  .new-price {
+    margin-top: rem(2);
+    color: $cinza-6;
+    font-size: rem(20);
+    line-height: rem(30);
+    font-weight: 700;
+  }
+  .installments {
+    margin-top: rem(2);
+    font-size: rem(12);
+    line-height: rem(18);
+  }
+  .frt {
+    margin-top: rem(7);
+  }
+  button {
+    margin-top: rem(12);
+    padding: rem(12) rem(64);
+    background-color: $cor-primaria;
+    border-radius: rem(4);
+    border: none;
+
+    color: $branco-0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: rem(14);
+    line-height: rem(21);
+
+    cursor: pointer;
+  }
+}
+
+.content-partners {
+  display: grid;
+  justify-content: space-evenly;
+  .partner-card {
+    height: 350px;
+    background-image: url(../../Assets/png/parceiros.png);
+    background-repeat: no-repeat;
+  }
+}

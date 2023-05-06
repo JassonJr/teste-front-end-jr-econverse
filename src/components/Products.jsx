@@ -14,18 +14,7 @@ const Products = () => {
         console.log(json);
       });
   }, []);
-  return (
-    <div>
-      {products.map((product) => (
-        <div key={product.id}>
-          <img src={product.photo} alt={product.name} />
-          <h2>{product.productName}</h2>
-          <p>{product.descriptionShort}</p>
-          <p>Price: {product.price}</p>
-        </div>
-      ))}
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Products;

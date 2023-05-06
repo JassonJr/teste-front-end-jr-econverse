@@ -3,9 +3,10 @@
 @import "_header";
 @import "_banner";
 @import "_navbar";
+@import "_content";
 
 body {
-  min-width: 1440px;
+  min-width: $desktop;
   overflow-x: hidden;
   font-family: Poppins, sans-serif;
 }

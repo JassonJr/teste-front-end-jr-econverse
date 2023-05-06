@@ -11,10 +11,9 @@ ul {
   img {
     padding-right: rem(9);
   }
-}
-
-p {
-  color: $cinza-2;
+  p {
+    color: $cinza-2;
+  }
 }
 
 .benefits {
@@ -60,20 +59,20 @@ p {
 }
 
 //navbar
-nav {
+.header-nav {
   padding: 11px 0px;
   text-transform: uppercase;
   font-weight: 600;
-}
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-a {
-  color: $cinza-2;
-  text-decoration: none;
+  a {
+    color: $cinza-2;
+    text-decoration: none;
+  }
 }
 
 .icon {

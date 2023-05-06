@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./components/styles/App.scss";
-import Products from "./components/Products";
+//import Products from "./components/Products";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
+import Content from "./components/Content";
 
 const App = () => {
   return (
@@ -11,8 +12,7 @@ const App = () => {
       <Header />
       <Banner />
       <Navbar />
-      {/* <Products /> */}
-      {/* <Main /> */}
+      <Content />
       {/* <Footer /> */}
     </div>
   );

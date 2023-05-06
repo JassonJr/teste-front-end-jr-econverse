@@ -48,7 +48,7 @@ const Header = () => {
       </section>
 
       {/* nav bar */}
-      <nav>
+      <nav className="header-nav">
         <ul>
           <li>
             <a href="/">todas as categorias</a>
