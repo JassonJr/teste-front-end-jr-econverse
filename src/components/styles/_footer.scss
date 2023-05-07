@@ -1,0 +1,120 @@
+footer {
+  background-color: $cinza-8;
+}
+.footer-above {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: rem(33) rem(93);
+}
+
+.footer-about-us {
+  display: flex;
+  flex-direction: column;
+  color: $branco-0;
+  row-gap: rem(10);
+}
+.about-tittle {
+  font-size: rem(13);
+  line-height: rem(20);
+  font-weight: bold;
+}
+.footer-title {
+  color: $branco-0;
+  font-size: rem(13);
+  line-height: rem(20);
+  //margin-bottom: rem(20);
+}
+.up {
+  text-transform: uppercase;
+}
+.footer-li {
+  font-size: rem(12);
+  line-height: rem(32);
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.social-media {
+  margin-top: rem(90);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info {
+  color: $branco-0;
+  //margin-left: rem(93);
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-evenly;
+  color: $branco-0;
+  row-gap: rem(10);
+  //align-items: last baseline;
+}
+
+.footer-payments {
+  margin-top: rem(26);
+}
+
+.footer-subscription {
+  background-color: $branco-0;
+  padding: rem(29) rem(40);
+  border-radius: rem(10);
+  margin-left: rem(242);
+
+  .sub-title {
+    text-align: justify;
+    //max-width: 24ch;
+    text-transform: uppercase;
+    font-size: rem(12);
+    line-height: rem(26);
+    font-weight: 300;
+  }
+  .sub-text {
+    max-width: 40ch;
+    text-align: center;
+  }
+  .highlight-title {
+    font-size: rem(18);
+    line-height: rem(26);
+    font-weight: bold;
+  }
+  .input-container {
+    margin-top: rem(31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(9);
+  }
+  .sub-input {
+    height: rem(45);
+    width: rem(230);
+    font-size: rem(12);
+    line-height: rem(20);
+    color: $cinza-1;
+    border: 1px solid $cinza-8;
+    border-radius: rem(4);
+    outline: none;
+    padding: rem(25) rem(13);
+  }
+  .sub-button {
+    height: rem(45);
+    padding: rem(13) rem(21);
+    background-color: $cor-primaria;
+    color: $branco-0;
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: bold;
+    border: none;
+    border-radius: rem(4);
+  }
+}
+
+.footer-copyrights {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $branco-0;
+  padding: rem(22) rem(93);
+  color: $branco-0;
+  .copyright-text {
+    max-width: 103ch;
+  }
+}
